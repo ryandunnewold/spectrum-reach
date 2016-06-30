@@ -18,8 +18,9 @@ html, body {
 }
 
 body {
-  background: url('../images/background.png');
+  background: rgb(4,42,70) url('../images/background.png');
   background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Montserrat";
 }
 
@@ -177,6 +178,7 @@ main {
       width: 75px;
       background: #fff;
       @include flex-center;
+      cursor: pointer;
     } 
 
     // Pencil icon that shows up before "Edit Section" when collapsed
@@ -281,6 +283,9 @@ footer {
         .come-back-link-wrapper {
           text-align: center;
         }
+      }
+      #step-1 {
+        margin-top: 50px;
       }
       #step-1, #step-2 {
         margin-left: 8px;

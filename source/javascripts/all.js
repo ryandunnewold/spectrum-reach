@@ -56,15 +56,15 @@ $(document).ready(function() {
 
 function toggleForms() {
   if ($("#step-1-form").is(":visible")) {
-    $("#step-1-form").slideToggle();
-    $("#step-2-form").slideToggle();
+    $("#step-1-form").slideToggle(300);
+    $("#step-2-form").slideToggle(300);
     $("#step-1-come-back").text("Edit section")
     $("#step-1-edit-pencil").show();
     $("#step-1-next-button").hide();
   }
   else {
-    $("#step-1-form").slideToggle();
-    $("#step-2-form").slideToggle();
+    $("#step-1-form").slideToggle(300);
+    $("#step-2-form").slideToggle(300);
     $("#step-1-come-back").text("Come back to this question") 
     $("#step-1-edit-pencil").hide();
     $("#step-1-next-button").show();
