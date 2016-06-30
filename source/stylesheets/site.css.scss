@@ -90,15 +90,17 @@ main {
     height: auto;
     #step-1-form, #step-2-form {
       margin-top: 30px;
+      // Input field wrapper to allow absolute positioning of checkmark
       .form-input-wrapper {
         position: relative;
+        // Input field styling
         .form-input {
           display: block;
           width: 100%;
           height: 50px;
           padding: 6px 12px;
           font-size: 14px;
-          line-height: 1.4m;
+          line-height: 1.4em;
           color: #555;
           background-color: #fff;
           border: 1px solid #e1e1e1;
@@ -108,6 +110,8 @@ main {
           &:focus {
             border-color: $teal;
           }
+
+          // Logic for the images to be shown inside the input field
           &+ img {
             @include transition(opacity 150ms ease-in-out);
             position: absolute;
@@ -115,6 +119,8 @@ main {
             top: 16px;
             opacity: 0;
           }
+
+          // Shows the check mark when required fields are valid
           &:valid:required {
             @include transition(padding 150ms ease-in-out);
             padding-left: 42px;
@@ -153,7 +159,6 @@ main {
       display: block;
       height: 50px;
       @include flex-center;
-      font-family: "Montserrat";
       font-weight: 600;
       text-decoration: none;
       color: #fff;
