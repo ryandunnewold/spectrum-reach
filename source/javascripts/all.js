@@ -15,10 +15,27 @@ $(document).ready(function() {
   $("#submit-button").click(function(e){
     e.preventDefault();
     if ($("#contact-form")[0].checkValidity()) {
-      swal({ title: "Success!", text: "Thanks for getting in touch. We'll get back with you within a few hours!", type: "success", confirmButtonText: "Cool!" });
+      swal({ 
+        title: "Success!", 
+        text: "Thanks for getting in touch. We'll reach out to you within a few hours!", 
+        type: "success", 
+        confirmButtonColor: "#38a38c", 
+        confirmButtonText: "Cool!" 
+      }, 
+      function(isConfirm){   
+        if (isConfirm) {     
+          $("#contact-form").submit();
+        }
+      });
     }
     else {
-      swal({ title: "Error!", text: "You haven't filled out all of the required fields.", type: "error", confirmButtonText: "Go back" });
+      swal({ 
+        title: "Error!", 
+        text: "You haven't filled out all of the required fields.", 
+        type: "error", 
+        confirmButtonColor: "#38a38c", 
+        confirmButtonText: "Go back"
+      });
     }
   });
 
