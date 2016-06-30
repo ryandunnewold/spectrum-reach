@@ -1,0 +1,119 @@
+---
+title: Spectrum Reach | Targeted Analysis
+---
+
+<header>
+  <h1 class="center">Targeted Analysis</h1>
+  <h4 class="center">The path to your Targeted Media Plan starts here!</h4>
+</header>
+
+<main>
+  <form action="/" id="contact-form">
+    <div class="row step" id="step-1"> 
+      <a id="collapse-step-button">
+        <img src="images/triangle-down.png">
+      </a>
+      <div class="col-xs-12 form-wrapper">
+        <div class="row">
+          <div class="col-xs-12 col-md-6" id="info-header">
+            <img src="images/checkmark-big.png" class="checkmark" id="info-check">
+            <h2 class="form-title">Your Information</h2>
+            <h4 class="form-subtitle">Information about you and your business.</h4>
+          </div>
+          <div class="col-xs-12 col-md-6 come-back-link-wrapper">
+            <img src="images/edit-pencil.png" id="step-1-edit-pencil">
+            <a id="step-1-come-back">Come back to this question</a>
+          </div>
+        </div>
+        <div class="row" id="step-1-form">
+          <div class="col-xs-12 col-md-6">
+            <div class="form-input-wrapper">
+              <input type="text" placeholder="Company Name" name="company_name" class="form-input" required>
+              <img src="images/checkmark.png" class="checkmark">
+            </div>
+            <div class="form-input-wrapper">
+              <input type="text" placeholder="Business Type" name="business_type" class="form-input" required>
+              <img src="images/checkmark.png" class="checkmark">
+            </div>
+            <div class="form-input-wrapper">
+              <input type="text" placeholder="Your Name" name="name" class="form-input" required>
+              <img src="images/checkmark.png" class="checkmark">
+            </div>
+            <div class="form-input-wrapper">
+              <input type="email" placeholder="Your Email Address" name="email" class="form-input" required>
+              <img src="images/checkmark.png" class="checkmark">
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="form-input-wrapper">
+              <input type="text" placeholder="Business Street Address" name="business_street" class="form-input" required>
+              <img src="images/checkmark.png" class="checkmark">
+            </div>
+            <div class="form-input-wrapper">
+              <input type="text" placeholder="Business Suite / Apt Number (optional)" name="business_suite" class="form-input">
+              <img src="images/checkmark.png" class="checkmark">
+            </div>
+            <div class="form-input-wrapper">
+              <input type="text" placeholder="Business City" name="business_city" class="form-input" required>
+              <img src="images/checkmark.png" class="checkmark">
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-8">
+                <div class="form-input-wrapper">
+                  <input type="text" placeholder="Business State" name="email" class="form-input" required>
+                  <img src="images/checkmark.png" class="checkmark">
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <div class="form-input-wrapper">
+                  <input type="text" placeholder="Zip Code" name="email" class="form-input" required pattern="\d{5}-?(\d{4})?">
+                  <img src="images/checkmark.png" class="checkmark">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="next-button" id="step-1-next-button">Next Question</a> 
+    </div>
+
+    <div class="row step" id="step-2">
+      <div class="col-xs-12 form-wrapper">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <h2 class="form-title">Why you?</h2>
+            <h4 class="form-subtitle">Why do customers choose you over the competition?</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div id="step-2-form">
+            <div class="col-xs-12 col-md-6">
+              <input type="radio" name="reason" id="reason-customer-service" value="Best Customer Service">
+              <label id="reason-customer-service-label" for="reason-customer-service">Best Customer Service</label>
+              <input type="radio" name="reason" id="reason-price" value="Best Price">
+              <label id="reason-price-label" for="reason-price">Best Price</label>
+              <input type="radio" name="reason" id="reason-quality" value="Quality Product">
+              <label id="reason-quality-label" for="reason-quality">Quality Product</label>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <input type="radio" name="reason" id="reason-trust" value="Reputation / Trust">
+              <label id="reason-trust-label" for="reason-trust">Reputation / Trust</label>
+              <input type="radio" name="reason" id="reason-other" value="Other">
+              <label id="reason-other-label" for="reason-other">
+                Other
+                <img src="images/chevron-right.png">
+              </label>
+              <div class="form-input-wrapper">
+                <input type="text" id="other-text" class="form-input">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="submit" id="submit-button" value="Submit">
+  </form>
+</main>
+<footer>
+  &copy; 2016 Charter Communications
+</footer>

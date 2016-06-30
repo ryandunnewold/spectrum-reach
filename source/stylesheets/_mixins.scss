@@ -1,0 +1,63 @@
+@mixin left-to-right-background($start-color, $end-color) {
+  background: $start-color;
+  background-image: -webkit-linear-gradient(left, $start-color, $end-color);
+  background-image: -moz-linear-gradient(left, $start-color, $end-color);
+  background-image: -ms-linear-gradient(left, $start-color, $end-color);
+  background-image: -o-linear-gradient(left, $start-color, $end-color);
+  background-image: linear-gradient(to right, $start-color, $end-color);
+  &:hover {
+    background: darken($start-color, 8%);
+    background-image: -webkit-linear-gradient(left, darken($start-color, 8%), darken($end-color, 8%));
+    background-image: -moz-linear-gradient(left, darken($start-color, 8%), darken($end-color, 8%));
+    background-image: -ms-linear-gradient(left, darken($start-color, 8%), darken($end-color, 8%));
+    background-image: -o-linear-gradient(left, darken($start-color, 8%), darken($end-color, 8%));
+    background-image: linear-gradient(to right, darken($start-color, 8%), darken($end-color, 8%));
+  }
+}
+
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+
+@mixin flex-center {
+  @include flex;
+  @include flex-justify(center);
+  @include flex-align-items(center);
+}
+
+@mixin flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-align-items($position) {
+  -webkit-box-align: $position; 
+  -moz-box-align: $position;
+  -ms-flex-align: $position;
+  -webkit-align-items: $position;
+  align-items: $position;  
+}
+
+@mixin flex-align($position) {
+  -webkit-align-content: $position;  
+  align-content: $position;  
+}
+
+@mixin flex-justify($position) {
+  -webkit-box-pack: $position;
+  -moz-box-pack: $position;
+  -ms-flex-pack: $position;
+  -webkit-justify-content: $position;
+  justify-content: $position;
+}
+
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+  flex-flow: $flow;
+}
